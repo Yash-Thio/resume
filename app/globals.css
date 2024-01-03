@@ -24,4 +24,66 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  padding: 1rem;
+}
+
+body::-webkit-scrollbar{
+  display:none;
+}
+
+.navbar{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  font-size: 2px;
+  justify-content: center;
+  align-items: center;
+}
+nav > ul > li > button{
+  background-color: rgba(0, 0, 0, 0) ;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+nav > ul > li > button:hover {
+  text-decoration: underline ;
+}
+
+.home{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  
+}
+
+.container {
+  display: flex;
+  flex-direction:column;
+  border-style: solid;
+  width: 320px;
+  height: 400px;
+  border-width: 4px;
+  border-color:aquamarine;
+  border-radius: 8px;
+}
+
+.projects{
+  height: 100vh;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #edf2f7;
+}
+
+.message::-webkit-scrollbar{
+  display:none;
 }
