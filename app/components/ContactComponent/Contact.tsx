@@ -25,12 +25,11 @@ export default function Contact() {
           email : formData.email,
           message : formData.message 
       })
-      console.log("Document written with ID: ", docRef.id)
   } catch (error:any) {
       console.error(error.message)
   }
   }
-  
+ 
   function handleMessageChange(event:any){
     setFormData((prevData)=>{
       return{
