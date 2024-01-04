@@ -1,19 +1,12 @@
 'use client'
 import React, { useState, ChangeEvent, useReducer, useMemo, useCallback } from "react";
 
-// the character length does not work and remove the scroll bar and implement sctolling in alternate method or just fix the box size to accomodate 500 characters.
 
-export default function Message(){
+export default function Message(props:any){
 
   const maxCharacters = 300;
-  const [text, setText] = useState("");
 
-  const handleTextChange = useCallback((event : any) => {
-    const newText = event.target.value;
-    setText(newText);
-  }, []);
-
-  const characterCount = text.length;
+  const characterCount = props.text.length;
   
   return(
     <div className="max-w-xs">
@@ -21,8 +14,8 @@ export default function Message(){
          Description
       </label>
       <textarea
-        value={text}
-        onChange={handleTextChange}
+        value={props.text}
+        onChange={props.onChange}
         required
         maxLength={300}
         id="description"
@@ -30,8 +23,10 @@ export default function Message(){
         rows= {5} // Adjust rows based on the number of lines
         cols = {100}
         className="message bg-transparent border border-gray-300 p-2 rounded-md w-full"
+        name ="message"
       />
       <p className="text-sm text-gray-500">{`${characterCount}/${maxCharacters} characters`}</p>
     </div>
     )
 }
+
