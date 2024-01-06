@@ -6,6 +6,7 @@ export default function Name(props:any){
           </label>
           <input
             type="name"
+            value={props.text}
             required
             onChange={props.onChange}
             id="name"

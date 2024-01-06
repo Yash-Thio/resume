@@ -29,6 +29,11 @@ export default function Contact() {
           email : formData.email,
           message : formData.message 
       })
+      setFormData({
+        message: "",
+        name: "",
+        email: "",
+      })
       alert("message sent successfully")
     } catch (error:any) {
       console.log(error.message)
@@ -71,7 +76,7 @@ export default function Contact() {
         <Message text={formData.message} onChange={handleMessageChange}/>
         <div className="space-y-4 pb-4">
         <Email text={formData.email} onChange={handleEmailChange} />
-        <Name text={formData.email} onChange={handleNameChange} />
+        <Name text={formData.name} onChange={handleNameChange} />
         </div>
         <Btn click={handleClick} />
     </form>
