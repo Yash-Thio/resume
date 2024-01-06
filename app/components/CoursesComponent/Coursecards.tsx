@@ -1,22 +1,26 @@
+'use client'
 import Coursedata from "./Coursedata";
 import Coursecard from "./Coursecard";
 
 import React from 'react'
 
 export default function Coursecards() {
-    const DataArray = Coursedata.data.courses;
-  const ProjectCard = DataArray.map((course) => (
+  const DataArray = Coursedata.data.courses;
+  const[img,setimg] = React.useState("")
+  const CourseCard = DataArray.map((course) => (
     <Coursecard
       key={course.id}
       name={course.name}
+      courseLink={course.courseLink}
       language={course.language}
+      by={course.by}
       image={course.image}
     />
   ));
   return (
-    <div className=" flex gap-10 justify-center" id='course'>
-      {ProjectCard}
-    </div>
+      <div className=" course h-screen flex flex-wrap gap-10 justify-center align-middle" id='course'>
+        {CourseCard}
+      </div>
   );
   
 }

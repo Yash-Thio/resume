@@ -6,6 +6,7 @@ export default function Name(props:any){
           </label>
           <input
             type="name"
+            required
             onChange={props.onChange}
             id="name"
             className="bg-transparent border border-gray-300 p-2 rounded-md"

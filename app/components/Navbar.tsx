@@ -16,11 +16,11 @@ export default function Navbar (){
     return(
         <nav className="fixed top-0 w-full">
             <ul className = "navbar">
-                <li><button onClick={() => scrollToSection('home')}>HOME</button></li>
-                <li><button onClick={() => scrollToSection('course')}>COURSES</button></li>
-                <li><button onClick={() => scrollToSection('projects')}>PROJECTS</button></li>
-                <li><button onClick={() => scrollToSection('achievements')}>ACHIEVEMENTS</button></li>
-                <li><button onClick={() => scrollToSection('contact')}>CONTACT</button></li>
+                <li><button className="font-apple-system font-semibold" onClick={() => scrollToSection('home')}>HOME</button></li>
+                <li><button className="font-apple-system font-semibold" onClick={() => scrollToSection('course')}>COURSES</button></li>
+                <li><button className="font-apple-system font-semibold" onClick={() => scrollToSection('projects')}>PROJECTS</button></li>
+                <li><button className="font-apple-system font-semibold" onClick={() => scrollToSection('achievements')}>ACHIEVEMENTS</button></li>
+                <li><button className="font-apple-system font-semibold" onClick={() => scrollToSection('contact')}>CONTACT</button></li>
             </ul>
         </nav>
         

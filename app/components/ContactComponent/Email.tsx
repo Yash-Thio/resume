@@ -6,6 +6,7 @@ export default function Email(props:any){
           </label>
           <input
             type="email"
+            required
             onChange={props.onChange}
             id="email"
             className="bg-transparent border border-gray-300 p-2 rounded-md"

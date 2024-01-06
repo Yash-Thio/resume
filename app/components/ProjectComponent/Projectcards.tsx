@@ -7,6 +7,7 @@ export default function Projectcards() {
     <Projectcard
       key={projects.id}
       name={projects.name}
+      techUsed={projects.techUsed}
       about={projects.about}
     />
   ));

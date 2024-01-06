@@ -18,15 +18,24 @@ export default function Contact() {
     {message: "", name: "", email:""}
   )
 
-  async function handleClick(){
+  async function handleClick(event:any){
+
+    event.preventDefault();
+
+    if (formData.message && formData.name && formData.email) {
     try {
       const docRef = await addDoc(collection(db, "posts"), {
           name : formData.name,
           email : formData.email,
           message : formData.message 
       })
-  } catch (error:any) {
-      console.error(error.message)
+      alert("message sent successfully")
+    } catch (error:any) {
+      console.log(error.message)
+    }
+  }
+  else{
+    alert("Message not sent. Please fill all the input fields")
   }
   }
  
@@ -58,12 +67,14 @@ export default function Contact() {
   }
 
   return (
-    <div className = "Contact h-screen flex justify-center items-center" id = 'contact'>
+    <form className = "Contact h-screen flex flex-wrap gap-4 justify-center items-center space-x-4" id = 'contact'>
         <Message text={formData.message} onChange={handleMessageChange}/>
+        <div className="space-y-4 pb-4">
         <Email text={formData.email} onChange={handleEmailChange} />
         <Name text={formData.email} onChange={handleNameChange} />
+        </div>
         <Btn click={handleClick} />
-    </div>
+    </form>
   )
 }
 

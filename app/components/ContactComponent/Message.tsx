@@ -10,15 +10,15 @@ export default function Message(props:any){
   
   return(
     <div className="max-w-xs">
-      <label htmlFor="description" className="block text-sm font-medium text-gray-700">
-         Description
+      <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+         Message
       </label>
       <textarea
         value={props.text}
         onChange={props.onChange}
         required
         maxLength={300}
-        id="description"
+        id="message"
         placeholder="Enter your message"
         rows= {5} // Adjust rows based on the number of lines
         cols = {100}
