@@ -12,7 +12,7 @@ export default function Projectcards() {
     />
   ));
   return (
-    <div className="projects flex-wrap" id="projects">
+    <div className="projects flex-wrap h-screen" id="projects">
       {ProjectCard}
     </div>
   );
