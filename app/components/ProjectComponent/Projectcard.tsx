@@ -1,7 +1,7 @@
 export default function Projectcard (card:any){
 
-    const tech = card.techUsed.map((x:string)=>(
-        <div className="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-blue-100 rounded-2xl">
+    const tech = card.techUsed.map((x:string, index:number)=>(
+        <div className="text-xs mr-2 py-1.5 px-4 text-gray-600 bg-blue-100 rounded-2xl" key={index}>
             {x}
         </div>
     ))

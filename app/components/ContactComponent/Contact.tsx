@@ -64,7 +64,7 @@ export default function Contact() {
             <p className="max-w-xl text-lg">
               Aspiring software developer here! I thrive on turning ideas into code magic. With a
               solid web development background, I bring creativity, problem-solving, and a team
-              spirit to the table. Let's build something amazing together!
+              spirit to the table. Let&#39;s build something amazing together!
            </p>
 
            <div className="mt-8">
