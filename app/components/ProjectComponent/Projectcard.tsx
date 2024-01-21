@@ -12,9 +12,9 @@ export default function Projectcard (card:any){
             <a href="#" className="block w-full h-full">
                 <div className="container w-full p-4 bg-white dark:bg-gray-800">
                     <p className="font-medium text-indigo-500 text-md">
-                        yolo
+                        
                     </p>
-                    <p className="mb-2 text-xl font-medium text-gray-800 dark:text-white">
+                    <p className="mb-2 text-xl font-medium text-gray-800 dark:text-indigo-500">
                         {card.name}
                     </p>
                     <p className="font-light text-gray-400 dark:text-gray-300 text-md">

@@ -3,10 +3,14 @@
 
 export default function Btn (props:any){
     return(
-        <button 
-        onClick = {props.click}
-        className=" button-89 ">
-            Send Message
-        </button>
+        <div className="mt-4">
+            <button
+              type="submit"
+              onClick = {props.click}
+              className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+            >
+              Send
+            </button>
+          </div>
     )
 }

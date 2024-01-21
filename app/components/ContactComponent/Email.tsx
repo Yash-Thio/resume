@@ -1,18 +1,17 @@
 export default function Email(props:any){
     return (
-        <div className="max-w-xs">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            Email
-          </label>
-          <input
-            type="email"
-            value={props.text}
-            required
-            onChange={props.onChange}
-            id="email"
-            className="bg-transparent border border-gray-300 p-2 rounded-md"
-            name="email"
-          />
-        </div>
+            <div>
+              <label className="sr-only" htmlFor="email">Email</label>
+              <input
+                className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Email address"
+                type="email"
+                id="email"
+                name="email"
+                onChange={props.onChange}
+                required
+                value={props.text}
+              />
+            </div>
       );
 }

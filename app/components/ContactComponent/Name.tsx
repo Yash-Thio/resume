@@ -1,18 +1,17 @@
 export default function Name(props:any){
     return (
-        <div className="max-w-xs">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-            Name
-          </label>
-          <input
-            type="name"
-            value={props.text}
-            required
-            onChange={props.onChange}
-            id="name"
-            className="bg-transparent border border-gray-300 p-2 rounded-md"
-            name="name"
-          />
-        </div>
+        <div>
+            <label className="sr-only" htmlFor="name">Name</label>
+            <input
+              className="w-full rounded-lg border-gray-200 p-3 text-sm"
+              placeholder="Name"
+              type="text"
+              id="name"
+              value={props.text}
+              required
+              onChange={props.onChange}
+              name="name"
+            />
+          </div>
       );
 }

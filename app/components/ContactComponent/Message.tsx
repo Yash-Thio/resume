@@ -9,24 +9,22 @@ export default function Message(props:any){
   const characterCount = props.text.length;
   
   return(
-    <div className="max-w-xs">
-      <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-         Message
-      </label>
-      <textarea
-        value={props.text}
-        onChange={props.onChange}
-        required
-        maxLength={300}
-        id="message"
-        placeholder="Enter your message"
-        rows= {5} // Adjust rows based on the number of lines
-        cols = {100}
-        className="message bg-transparent border border-gray-300 p-2 rounded-md w-full"
-        name ="message"
-      />
-      <p className="text-sm text-gray-500">{`${characterCount}/${maxCharacters} characters`}</p>
-    </div>
+    <div>
+            <label className="sr-only" htmlFor="message">Message</label>
+
+            <textarea
+              className="w-full rounded-lg border-gray-200 p-3 text-sm"
+              placeholder="Message"
+              rows={8}
+              maxLength={300}
+              id="message"
+              value={props.text}
+              onChange={props.onChange}
+              required
+              name ="message"
+            ></textarea>
+            <p className="text-sm text-black text-right">{`${characterCount}/${maxCharacters} characters`}</p>
+          </div>
     )
 }
 
