@@ -9,7 +9,7 @@ export default function Projectcard (card:any){
 
         
         <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <a href="#" className="block w-full h-full">
+            <a className="block w-full h-full">
                 <div className="container w-full p-4 bg-white dark:bg-gray-800">
                     <p className="font-medium text-indigo-500 text-md">
                         

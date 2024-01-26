@@ -62,16 +62,17 @@ export default function Contact() {
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:py-12">
             <p className="max-w-xl text-lg">
-              Aspiring software developer here! I thrive on turning ideas into code magic. With a
-              solid web development background, I bring creativity, problem-solving, and a team
-              spirit to the table. Let&#39;s build something amazing together!
+              As an aspiring software developer, I excel at transforming concepts into code magic. 
+              With a robust foundation in web development, my skills encompass creativity, 
+              effective problem-solving, and a collaborative team spirit. I am eager 
+              to contribute my expertise to building remarkable projects together. 
+              Let&#39;s embark on the journey of creating innovative solutions and shaping the future of technology collaboratively.
            </p>
 
            <div className="mt-8">
-              <a href="" className="text-2xl font-bold text-pink-600"> +91 933 0383 184 </a>
+              <a href="" className="text-2xl font-bold text-pink-600"></a>
 
-              <address className="mt-2 not-italic">Uniworld City, Tower- Garden 3, Flat Number- 403,
-              <br/> New Town Action Area 3, Kolkata, West Bengal- 700160 </address>
+              <address className="mt-2 not-italic"></address>
 
             </div>
           </div>

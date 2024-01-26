@@ -7,7 +7,7 @@ export default {
                 "name": "Learn Javascript",
                 "language": "JavaScript",
                 "by": "Scrimba",
-                "image": ""
+                "image": "/images/scrimba.png"
             },
             {
                 "id": 2,
@@ -15,7 +15,7 @@ export default {
                 "name": "Learn React",
                 "language": "React, JavaScript",
                 "by": "Scrimba",
-                "image": "" 
+                "image": "/images/scrimba.png" 
             },
             {
                 "id": 3,
@@ -23,7 +23,7 @@ export default {
                 "name": "React Tutorial",
                 "language": "React, TypeScript",
                 "by": "Mosh",
-                "image": "" 
+                "image": "/images/mosh.jpg" 
             },
             {
                 "id": 4,
@@ -37,9 +37,9 @@ export default {
                 "id": 5,
                 "courseLink": "https://youtu.be/ZVnjOPwW4ZA?si=nZnwO9E2K5M9LbSZ",
                 "name": "Learn Next.js",
-                "language": "Next.js, React, Typescript, Tailwind CSS",
+                "language": "Next.js, React, Typescript",
                 "by": "Mosh",
-                "image": "" 
+                "image": "/images/mosh.jpg" 
             }
         ]   
     }

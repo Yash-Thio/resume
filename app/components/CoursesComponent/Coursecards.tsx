@@ -18,9 +18,9 @@ export default function Coursecards() {
     />
   ));
   return (
-      <div className=" course h-screen flex flex-wrap gap-10 justify-center align-middle" id='course'>
-        {CourseCard}
-      </div>
+        <div className="h-screen flex flex-wrap gap-10 justify-center items-center" id='course'>
+          {CourseCard}
+        </div>
   );
   
 }
