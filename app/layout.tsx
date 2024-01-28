@@ -19,7 +19,9 @@ export default function RootLayout({
       <head>
         <title> Yash Pandey</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   )
 }

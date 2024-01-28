@@ -1,5 +1,5 @@
 'use client'
-export default function Navbar (){
+export default function Navbar (props:any){
   
     function HandleClick(l : string){
         console.log("clicked " + l);
