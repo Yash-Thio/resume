@@ -18,7 +18,7 @@ function Sidebar(props: any) {
     <div>
       <button
         type="button"
-        className="fixed right-0 p-5 inline-flex items-center md:hidden "
+        className="fixed right-0 p-5 inline-flex items-center md:hidden z-top"
         onClick={props.toggle}
       >
         {/* Menu icon */}
