@@ -19,7 +19,7 @@ function Sidebar(props: any) {
       <button
         type="button"
         className="fixed right-0 p-5 inline-flex items-center md:hidden "
-        onTouchEnd={props.toggle}
+        onClick={props.toggle}
       >
         {/* Menu icon */}
         <svg
@@ -38,7 +38,7 @@ function Sidebar(props: any) {
           top: ` ${props.isOpen ? "0" : "-100%"}`,
         }}
       >
-        <button className="absolute right-0 p-5" onTouchEnd={props.toggle}>
+        <button className="absolute right-0 p-5" onClick={props.toggle}>
           {/* Close icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ function Sidebar(props: any) {
           <li>
             <button
               className="font-apple-system font-semibold"
-              onTouchEnd={() => scrollToSection("home")}
+              onClick={() => scrollToSection("home")}
             >
               HOME
             </button>
@@ -65,7 +65,7 @@ function Sidebar(props: any) {
           <li>
             <button
               className="font-apple-system font-semibold"
-              onTouchEnd={() => scrollToSection("course")}
+              onClick={() => scrollToSection("course")}
             >
               COURSES
             </button>
@@ -73,7 +73,7 @@ function Sidebar(props: any) {
           <li>
             <button
               className="font-apple-system font-semibold"
-              onTouchEnd={() => scrollToSection("projects")}
+              onClick={() => scrollToSection("projects")}
             >
               PROJECTS
             </button>
@@ -81,7 +81,7 @@ function Sidebar(props: any) {
           <li>
             <button
               className="font-apple-system font-semibold"
-              onTouchEnd={() => scrollToSection("achievements")}
+              onClick={() => scrollToSection("achievements")}
             >
               ACHIEVEMENTS
             </button>
@@ -89,7 +89,7 @@ function Sidebar(props: any) {
           <li>
             <button
               className="font-apple-system font-semibold"
-              onTouchEnd={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("contact")}
             >
               CONTACT
             </button>
