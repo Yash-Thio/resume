@@ -75,7 +75,7 @@ const AboutSection: React.FC = () => {
   };
 
   const handleDownload = () => {
-    const pdfPath = `${process.env.PUBLIC_URL}/public/pdf/Yash Pandey Resume.pdf`;
+    const pdfPath = `/pdf/YashPandeyResume.pdf`;
 
     const link = document.createElement('a');
 
