@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home";
+import AboutSection from "./components/AboutComponent/AboutSection";
 import Projectcards from "./components/ProjectComponent/Projectcards";
 import Contact from "./components/ContactComponent/Contact";
 import Coursecards from "./components/CoursesComponent/Coursecards";
@@ -10,6 +11,7 @@ export default function main() {
     <main>
       <Navigation />
       <Home />
+      <AboutSection />
       <Coursecards />
       <Projectcards />
       <Contact />
