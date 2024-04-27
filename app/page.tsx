@@ -1,5 +1,4 @@
 import Navigation from "./components/Navigation/Navigation";
-// import Home from "./components/Home";
 import { Home } from "./components/Home";
 import AboutSection from "./components/AboutComponent/AboutSection";
 import Projectcards from "./components/ProjectComponent/Projectcards";

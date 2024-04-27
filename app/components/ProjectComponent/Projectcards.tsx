@@ -38,8 +38,11 @@ export default function Projectcards() {
     />
   ));
   return (
-    <div className={`${(width && width < 768)? "" : "h-screen"} flex flex-wrap gap-7 items-center justify-center mt-10`} id="projects">
-      {ProjectCard}
+    <div className={`${(width && width < 768)? "mb-20" : "h-screen"} flex flex-col gap-8 justify-center items-center`} id="projects">
+      <h2 className="text-4xl font-bold text-slate-500 mb-4" >Projects</h2>
+      <div className=" flex flex-wrap gap-10 items-center justify-center " >
+        {ProjectCard}
+      </div>
     </div>
   );
 }

@@ -42,9 +42,12 @@ export default function Coursecards() {
     />
   ));
   return (
-        <div className={`${(width && width < 768)? "" : "h-screen"} flex flex-wrap gap-10 justify-center items-center mb-10`} id='course'>
+    <div className={`${(width && width < 768)? "mb-20" : "h-screen"} flex flex-col gap-8 justify-center items-center`} id='course'>
+          <h2 className="text-4xl font-bold text-slate-500 mb-4" >Courses</h2>
+          <div className= "flex flex-wrap gap-10 justify-center items-center">
           {CourseCard}
         </div>
+    </div>
   );
   
 }

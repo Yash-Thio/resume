@@ -17,9 +17,11 @@ export function Home() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
+        <div>
         <span className="text-7xl font-apple-system text-center">Hello, I&#39;m</span><br />
         <span className="text-8xl font-apple-system text-center"><strong>Yash Pandey</strong></span>
         <h3 className="text-lg font-wix-made-for-display text-center">AND THIS IS MY WEBSITE</h3>
+        </div>
       </motion.div>
     </LampContainer>
   );
@@ -40,7 +42,7 @@ export const LampContainer = ({
         className
       )}
     >
-      <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
+      <div className=" relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}
